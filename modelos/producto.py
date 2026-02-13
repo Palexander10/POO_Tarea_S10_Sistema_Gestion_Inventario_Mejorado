@@ -12,7 +12,7 @@ class Producto:
         self._cantidad = cantidad
         self._precio = precio
 
-    # --- Getters (Obtener valores) ---
+    # GETTERS
     def get_id(self):
         return self._id
 
@@ -25,7 +25,7 @@ class Producto:
     def get_precio(self):
         return self._precio
 
-    # --- Setters (Modificar valores) ---
+    # SETTERS
     def set_nombre(self, nombre):
         self._nombre = nombre
 
@@ -35,7 +35,7 @@ class Producto:
     def set_precio(self, precio):
         self._precio = precio
 
-    # --- Método para representación en texto ---
+    # Método para representación en texto
     def __str__(self):
         return (
             f"ID: {self._id} | "     
