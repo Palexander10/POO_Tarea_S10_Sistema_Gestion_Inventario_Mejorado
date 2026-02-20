@@ -44,3 +44,11 @@ class Producto:
             f"Precio: ${self._precio:.2f}"
             )
     
+    # Método para convertir el producto a una línea de texto separada por comas
+    def a_texto(self):
+        return (
+            f"{self._id},"
+            f"{self._nombre},"
+            f"{self._cantidad},"
+            f"{self._precio}"
+        )
