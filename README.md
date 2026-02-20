@@ -1,4 +1,4 @@
-# 📦Sistema de Gestión de Inventarios (Versión Mejorada)
+# Sistema de Gestión de Inventarios (Versión Mejorada)
 Elaborado por: Pablo Ramón Mosquera
 
 Este programa es una aplicación de consola desarrollada en **Python** que permite gestionar el inventario de una tienda. En esta versión mejorada, el sistema implementa **persistencia de datos** mediante archivos de texto y un **manejo robusto de excepciones** para garantizar que el programa no se detenga ante errores inesperados.
