@@ -1,0 +1,4 @@
+T001,Tablet Samsung,5,400.0
+C002,Iphone 17,4,900.0
+L004,Laptop Asus,2,1100.0
+D004,Dron Dji,5,500.0

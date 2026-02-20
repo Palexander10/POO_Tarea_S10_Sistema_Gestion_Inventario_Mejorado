@@ -1,19 +1,21 @@
-# Sistema de Gestión de Inventarios
+# 📦Sistema de Gestión de Inventarios (Versión Mejorada)
 Elaborado por: Pablo Ramón Mosquera
 
-Esta tarea es una aplicación de consola desarrollada en Python que permite gestionar el inventario de una tienda de manera eficiente. Aplica fundamentos de Programación Orientada a Objetos (POO) y arquitectura modular para separar la lógica de negocio de la interfaz de usuario.
+Este programa es una aplicación de consola desarrollada en **Python** que permite gestionar el inventario de una tienda. En esta versión mejorada, el sistema implementa **persistencia de datos** mediante archivos de texto y un **manejo robusto de excepciones** para garantizar que el programa no se detenga ante errores inesperados.
 
-## Características
+## Características Principales
 
-El sistema permite realizar las operaciones CRUD (Crear, Leer, Actualizar, Eliminar) básicas:
+Además de las operaciones CRUD (Crear, Leer, Actualizar, Eliminar) básicas, esta versión incluye:
 
-* **Añadir Producto:** Registra nuevos productos validando que el ID sea único.
-* **Actualizar Producto:** Modifica el precio o la cantidad de stock de un producto existente.
-* **Eliminar Producto:** Da de baja productos del inventario mediante su ID.
-* **Buscar:** Permite localizar productos por nombre (incluyendo coincidencias parciales).
-* **Listar Todo:** Muestra un reporte completo de todos los productos registrados.
+* **Almacenamiento en Archivo (`inventario.txt`):** Los productos añadidos, modificados o eliminados se guardan automáticamente en el disco duro. Al iniciar el programa, el inventario se reconstruye leyendo este archivo.
+* **Creación Automática:** Si el archivo de inventario no existe al iniciar el sistema, el programa lo crea automáticamente.
+* **Manejo de Excepciones:**
+  * Control de errores de lectura/escritura (`FileNotFoundError`, `PermissionError`).
+  * Validación de entradas de usuario para evitar que el programa falle al ingresar letras en lugar de números (`ValueError`).
+  * Notificaciones claras al usuario sobre el éxito o fallo de las operaciones.
+* **Búsqueda Flexible:** Permite localizar productos por nombre, incluyendo coincidencias parciales.
 
 ## Estructura del Proyecto
 
-El código está organizado de manera modular para facilitar su mantenimiento y escalabilidad:
+El código mantiene una arquitectura modular orientada a objetos.
 
